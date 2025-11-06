@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(148, 91, 135);
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#root{
+    background-color: rgb(82, 47, 74);
+    width: 750px;
+    height: 500px;
+    margin-left: 360px;
+}
+footer{
+    background-color: rgb(120, 70, 121);
+    height: 60px;
+}
+#contenedor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    
+}
+#matrisBTN{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;   
+    height: 300px; 
+    width: 300px;
+   padding: 40px;
+    
+}
+#contenedor_controles{
+    border: 2px solid black;
+    height: 400px;
+    width: 300px;
+    gap: 5px;
+    
+}
+#volumen{
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 250px;
+    accent-color: #ff7eb6; /* cambia el color del slider */
+}
+#por_volumen{
+    margin-left: 130px;
+    margin-top: 0px;
+    color: white;
+}
+
+#etiqueta{
+   background-color: rgb(87, 59, 113);
+   border-radius: 2px solid rgb(87, 59, 113);
+   display: inline-block; /* el ancho se ajusta al contenido */
+  background-color: rgb(87, 59, 113);
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+   width: 105px;
+   height: 23px;
+   margin-left: 105px;
+   margin-top: 110px;
+}
+#bank {
+    width: 23px;
+    height: 19px;
+    background: blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+
+
+}
+#selector{
+     margin: auto;
+      border: 1px solid black;
+      width: 50px;
+      height: 20px;
+      padding: 1px;
+      background-color: black;
+      display: flex;
+      margin-top: 40px;
+}
+#on-off{
+
+    margin-top: 0px;
+    margin-left: 135px;
+    color: white;
+
+}
+button{
+    border: #a98c98 2px solid;
+    border-radius: 10px;
+    background-color: rgb(148, 91, 135);
+    box-shadow:
+    3px 3px 8px rgba(0, 0, 0, 0.4),
+    -3px -3px 8px rgba(255, 255, 255, 0.05);
+
+}
+button:active{
+    transform: scale(0.95);
+    box-shadow:
+    inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.1),
+    0 0 15px #ff7eb6,
+    0 0 25px #ff7eb6;
+}
+.drum-pad.flash{
+    transform: scale(0.95);
+    box-shadow:
+    0 0 15px #ff7eb6,
+    0 0 25px #ff7eb6,
+    inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 6px rgba(255, 255, 255, 0.1);
+   transition: transform 0.12s, box-shadow 0.12s;
+}
